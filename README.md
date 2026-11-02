@@ -30,8 +30,8 @@ Tout se fait par un **clic droit sur l'icône** :
 | En tête (grisée) | La lumière actuelle et qui la pilote. |
 | Disponible, Occupé, En réunion, Ne pas déranger, De retour bientôt, Absent, Éteindre | Choisir la lumière à la main. |
 | Durée › | Combien de temps tient le prochain choix : 15 min, 30 min, 1 h, jusqu'à nouvel ordre. |
-| Retour en auto | Rendre la main à Teams avant la fin de la durée. |
-| Automatique › | Les sources suivies (Statut Teams, Réunion Teams…) ; « Changer aussi mon statut Teams » : un choix fait à la main change aussi votre statut dans Teams. |
+| Retour en auto | Rendre la main au suivi automatique (Teams) avant la fin de la durée. |
+| Automatique › | Les sources suivies (Statut Teams, Réunion Teams…) et « Changer aussi mon statut Teams » (cochée par défaut). |
 | Installer la mise à jour | Visible quand une nouvelle version est prête. |
 | Quitter | Ferme OrbControl et éteint l'Orb. |
 
@@ -40,6 +40,12 @@ Couleurs : vert = Disponible, rouge = Occupé, En réunion, Ne pas déranger, or
 « Ouvrir OrbControl » n'ouvre encore rien : la fenêtre arrivera dans une prochaine version.
 
 ## Suivi de Teams
+
+L'Orb et Teams restent synchronisés dans les deux sens : un statut choisi dans le menu de l'icône change aussi votre
+statut Teams (le temps de la durée choisie, puis Teams reprend son statut automatique), et un statut changé dans
+Teams change la lumière, même après un choix fait dans le menu (quelques secondes après ce choix, le temps que Teams
+l'applique). « En réunion » n'existe pas dans Teams : choisi dans le menu, il tient jusqu'à la fin de sa durée. Pour que le menu ne touche pas à Teams,
+décochez « Changer aussi mon statut Teams » dans Automatique ›.
 
 OrbControl suit le **nouveau Teams** (Teams pour le travail ou l'école) ouvert sur ce poste : il lit son journal local
 et son statut affiché, sans compte, sans connexion à Microsoft et sans rien envoyer. « Changer aussi mon statut
